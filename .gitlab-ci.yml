@@ -1,0 +1,43 @@
+# .gitlab-ci.yml
+stages:
+  - lint
+  - test
+
+pylint:
+  stage: lint
+  tags:
+    - linux
+  before_script:
+    - pip install -r requirements.txt
+  script:
+    - pylint --fail-under 9.0 src | tee pylint.log
+  artifacts:
+    when: always
+    paths:
+      - pylint.log
+
+black:
+  stage: lint
+  tags:
+    - linux
+  before_script:
+    - pip install -r requirements.txt
+  script:
+    - black --check . | tee black.log
+  artifacts:
+    when: always
+    paths:
+      - black.log
+
+test:
+  stage: test
+  tags:
+    - linux
+  before_script:
+    - pip install -r requirements.txt
+  script:
+    - python -m unittest discover | tee test-results.log
+  artifacts:
+    when: always
+    paths:
+      - test-results.log
