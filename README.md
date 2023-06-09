@@ -39,12 +39,12 @@ $ python -m src.main
 <img src="./assets/readme/tambah_target.png" alt="Tambah Target"><br>
 <img src="./assets/readme/hapus_target.png" alt="Hapus Target"><br>
 <img src="./assets/readme/edit_target.png" alt="Edit Target"><br>
-- Modul melihat artikel 
+- Modul melihat artikel <br>
 <img src="./assets/readme/lihat_artikel.png" alt="Lihat Artikel"><br>
-- Modul mengelompokkan data berdasarkan kategori
+- Modul mengelompokkan data berdasarkan kategori<br>
 <img src="./assets/readme/kelompok_pendapatan.png" alt="Lihat Artikel"><br>
 <img src="./assets/readme/kelompok_pengeluaran.png" alt="Lihat Artikel"><br>
-- Modul memperbaharui saldo 
+- Modul memperbaharui saldo <br>
 <img src="./assets/readme/saldo.png" alt="Lihat Artikel"><br>
 
 
